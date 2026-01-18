@@ -41,6 +41,7 @@ header nav, .hero-sec{
 }
 .hero-sec{
     text-align: center;
+    padding-bottom: 35px;
 }
 .hero-content{
     max-width: 860px;
@@ -60,9 +61,8 @@ header nav, .hero-sec{
 }
 header .hero-sec img{
     width: 100%;
-    vertical-align: none;
 }
-header .hero-sec .primary-btn{
+.primary-btn{
     padding: 21px 24px;
     margin-bottom: 40px;
     border: none;
@@ -72,6 +72,7 @@ header .hero-sec .primary-btn{
     font-size: 1.25rem;
     border-radius: 8px;
 }
+
 
 /* header section media code */
 @media screen and (max-width: 576px){
@@ -84,3 +85,45 @@ header .hero-sec .primary-btn{
         flex-direction: row;
     }
 }
+/* feature section css code start here */
+#features .features-container{
+    display: flex;
+    max-width: 1400px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 85px auto 130px auto;
+}
+#features .features-container .features-images-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+#features img{
+    width: 100%;
+}
+
+#features .features-container .features-content{
+    max-width: 537px;
+}
+#features .features-container .features-content h2{
+    font-size: 2.75rem;
+    margin-bottom: 24px;
+}
+
+#features .features-container .features-content h2 .quick-list{
+    color: #727272;
+    font-weight: 500;
+}
+#features .features-container .features-content h2 #onnge-color{
+    color:#FF900E;
+}
+#features .features-container .features-content p{
+       color: #727272;
+       font-size: 1rem;
+}
+#features .primary-btn{
+    margin-top: 32px;
+}
+/* feature section css code end here */
