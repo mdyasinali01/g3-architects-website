@@ -20,6 +20,10 @@ header nav{
     padding-top: 30px;
     justify-content: space-between;
 }
+header nav #logo{
+    font-size: 3rem;
+    font-weight: 700;
+}
 header nav ul li{
     list-style: none;
     margin-left: 50px;
@@ -39,10 +43,13 @@ header nav, .hero-sec{
     text-align: center;
 }
 .hero-content{
+    max-width: 860px;
+    margin: 0px auto;
+    text-align: center;
     margin-top: 116px;
 }
 .hero-content h1{
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 24px;
 }
@@ -51,12 +58,29 @@ header nav, .hero-sec{
     color: #727272;
     margin: 0px auto 32px auto;
 }
-.hero-sec button{
+header .hero-sec img{
+    width: 100%;
+    vertical-align: none;
+}
+header .hero-sec .primary-btn{
     padding: 21px 24px;
     margin-bottom: 40px;
     border: none;
+    background-color: #FF900E;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 8px;
 }
-header .hero-sec img{
-    width: 100%;
-    border: none;
+
+/* header section media code */
+@media screen and (max-width: 576px){
+    .display-flex{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    #ul-list{
+        flex-direction: row;
+    }
 }
