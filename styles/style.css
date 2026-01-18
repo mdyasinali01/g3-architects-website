@@ -9,6 +9,10 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.body-width{
+    max-width: 1440px;
+    margin: 0px auto;
+}
 /* shared style */
 .display-flex{
     display: flex;
@@ -72,19 +76,6 @@ header .hero-sec img{
     font-size: 1.25rem;
     border-radius: 8px;
 }
-
-
-/* header section media code */
-@media screen and (max-width: 576px){
-    .display-flex{
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-    #ul-list{
-        flex-direction: row;
-    }
-}
 /* feature section css code start here */
 #features .features-container{
     display: flex;
@@ -127,3 +118,96 @@ header .hero-sec img{
     margin-top: 32px;
 }
 /* feature section css code end here */
+/* experience section start here */
+#experience .experience-container{
+    max-width: 1440px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#experience .experience-container .experience-content{
+    max-width: 586px;
+}
+#experience .experience-content h2{
+    max-width: 468px;
+    font-size: 2.80rem;
+    font-weight: bold;
+    margin-bottom: 24px;
+    border-left: 4px solid #FF900E;
+    padding-left: 21px;
+}
+#experience .experience-content .exp-des{
+    font-size: 1rem;
+    color: #727272;
+    margin-bottom: 30px;
+}
+#experience .experience-card-container .experience-card{
+    max-width: 586px;
+    padding: 30px;
+    box-shadow: 5px 5px 15px 1px rgba(30, 30, 30, 0.20);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+#experience .experience-card-container .experience-card h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#experience .experience-card-container .experience-card p{
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 26px;
+}
+#experience .experience-container .experience-image{
+    max-width: 800px;
+    position: relative;
+}
+#experience .experience-container .experience-image .btn{
+    padding: 46px 42px;
+    border: none;
+    background-color: #FF900E;
+    color: #ffffff;
+    font-size: 3rem;
+    position: absolute;
+    left: -20px;
+    bottom: -15px;
+    border-radius: 8px;
+}
+#experience .experience-image .small{
+    font-size: 25px;
+}
+#experience .experience-container img{
+    width: 100%;
+}
+/* header section media code */
+@media screen and (max-width: 576px){
+    .display-flex{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-content h1{
+        font-size: 2rem;
+    }
+}
+/* media for features */
+@media screen and (max-width: 576px){
+    .features-container{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* media for experience */
+@media screen and (max-width: 576px){
+    .experience-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .features-content p{
+        padding: 10px 0px;
+    }
+}
+/* experience section end here */
